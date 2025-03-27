@@ -1,8 +1,34 @@
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import NewsletterForm from '@/components/NewsletterForm'
+import { Metadata, ResolvingMetadata } from 'next'
 
-// Define all possible blog slugs
+// Define the type for the page props
+type PageProps = {
+  params: {
+    slug: string
+  }
+}
+
+// Metadata generation function
+export async function generateMetadata(
+  { params }: PageProps, 
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const slug = params.slug
+  const blogPosts = {
+    'hack-brain': { title: 'How to Hack Your Brain' },
+    'design-tips': { title: 'How to Design Clean UI as an Engineer' },
+    // ... add other blog post titles
+    'rejections-dont-define-you': { title: 'Rejections Don\'t Define You' }
+  }
+
+  return {
+    title: blogPosts[slug as keyof typeof blogPosts]?.title || 'Blog Post',
+    description: 'Blog post details'
+  }
+}
+
 export function generateStaticParams() {
   const blogs = [
     { slug: 'hack-brain' },
@@ -17,15 +43,11 @@ export function generateStaticParams() {
     { slug: 'javascript-tips' },
     { slug: 'react-optimization' },
     { slug: 'startup-engineering' },
-    
-    // Add the new slug
     { slug: 'rejections-dont-define-you' },
-    
-    // Add any other blog slugs you might have
     { slug: 'productivity-tips' },
     { slug: 'tech-trends' },
     { slug: 'career-growth' },
-    { slug: 'coding-best-practices' },
+    { slug: 'coding-best-practices' }
   ]
 
   return blogs.map((blog) => ({
@@ -33,7 +55,7 @@ export function generateStaticParams() {
   }))
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+export default function BlogPost({ params }: PageProps) {
   const { slug } = params;
 
   // Get post data or return fallback data
@@ -83,8 +105,6 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       date: '2024-03-10',
       content: '<p>A look at the most exciting technology trends...</p>'
     },
-    
-    // New blog posts
     'approach-frontend': {
       title: 'My Approach to Frontend Development',
       date: '2024-02-01',
