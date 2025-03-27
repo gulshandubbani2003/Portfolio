@@ -12,19 +12,20 @@ export function generateStaticParams() {
     { slug: 'arc' },
     { slug: 'view-counter' },
     { slug: 'coding-journey' },
+    { slug: 'approach-frontend' },
+    { slug: 'developer-tools' },
+    { slug: 'javascript-tips' },
+    { slug: 'react-optimization' },
+    { slug: 'startup-engineering' },
+    
+    // Add the new slug
+    { slug: 'rejections-dont-define-you' },
     
     // Add any other blog slugs you might have
     { slug: 'productivity-tips' },
     { slug: 'tech-trends' },
     { slug: 'career-growth' },
     { slug: 'coding-best-practices' },
-    
-    // New slugs
-    { slug: 'approach-frontend' },
-    { slug: 'developer-tools' },
-    { slug: 'javascript-tips' },
-    { slug: 'react-optimization' },
-    { slug: 'startup-engineering' }
   ]
 
   return blogs.map((blog) => ({
@@ -118,6 +119,11 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       title: 'Engineering at a Startup: My Experience',
       date: '2024-07-15',
       content: '<p>Insights and lessons learned from working at early-stage startups...</p>'
+    },
+    'rejections-dont-define-you': {
+      title: 'Rejections Don\'t Define You',
+      date: '2024-08-01',
+      content: '<p>A personal reflection on overcoming setbacks and finding strength in rejection...</p>'
     }
   }
 
