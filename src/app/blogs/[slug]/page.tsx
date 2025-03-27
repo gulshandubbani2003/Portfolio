@@ -5,8 +5,8 @@ import { Metadata, ResolvingMetadata } from 'next'
 
 // Modify the type definition to include potential async properties
 type PageProps = {
-  params: {
-    slug: string
+  readonly params: {
+    readonly slug: string
   } & Record<string, string | Promise<string>>
 }
 
@@ -69,7 +69,7 @@ export function generateStaticParams() {
   }))
 }
 
-export default function BlogPost({ params }: PageProps) {
+export default function BlogPost({ params }: Readonly<PageProps>) {
   const { slug } = params;
 
   // Get post data or return fallback data
