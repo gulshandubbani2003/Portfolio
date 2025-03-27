@@ -6,8 +6,8 @@ import { Metadata, ResolvingMetadata } from 'next'
 
 // Define props for the page with stricter typing for params
 interface PageProps {
-  params: {
-    slug: string
+  readonly params: {
+    readonly slug: string
   }
 }
 
@@ -72,7 +72,7 @@ export function generateStaticParams() {
 }
 
 // Server Component - renders the page
-export default async function BlogPost({ params }: PageProps) {
+export default async function BlogPost({ params }: Readonly<PageProps>) {
   const { slug } = params
 
   const blogPosts = {
