@@ -3,29 +3,43 @@ import { ArrowLeft } from 'lucide-react'
 import NewsletterForm from '@/components/NewsletterForm'
 import { Metadata, ResolvingMetadata } from 'next'
 
-// Define the type for the page props
+// Modify the type definition to include potential async properties
 type PageProps = {
   params: {
     slug: string
-  }
+  } & Record<string, string | Promise<string>>
 }
 
-// Metadata generation function
+// Update metadata generation to be fully async
 export async function generateMetadata(
   { params }: PageProps, 
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const slug = params.slug
   const blogPosts = {
-    'hack-brain': { title: 'How to Hack Your Brain' },
-    'design-tips': { title: 'How to Design Clean UI as an Engineer' },
-    // ... add other blog post titles
-    'rejections-dont-define-you': { title: 'Rejections Don\'t Define You' }
+    'hack-brain': { 
+      title: 'How to Hack Your Brain',
+      description: 'Strategies for mental optimization'
+    },
+    'design-tips': { 
+      title: 'How to Design Clean UI as an Engineer',
+      description: 'UI design principles for developers'
+    },
+    'rejections-dont-define-you': { 
+      title: 'Rejections Don\'t Define You',
+      description: 'Overcoming setbacks in your career'
+    }
+  }
+
+  // Ensure type safety and provide fallback
+  const postMetadata = blogPosts[slug as keyof typeof blogPosts] || {
+    title: 'Blog Post',
+    description: 'Detailed blog post'
   }
 
   return {
-    title: blogPosts[slug as keyof typeof blogPosts]?.title || 'Blog Post',
-    description: 'Blog post details'
+    title: postMetadata.title,
+    description: postMetadata.description
   }
 }
 
