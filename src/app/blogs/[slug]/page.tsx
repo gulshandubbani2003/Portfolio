@@ -1,48 +1,51 @@
+// src/app/blogs/[slug]/page.tsx
+// No 'use client' directive - this is a Server Component
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import NewsletterForm from '@/components/NewsletterForm'
 import { Metadata, ResolvingMetadata } from 'next'
 
-// Modify the type definition to include potential async properties
-type PageProps = {
-  readonly params: {
-    readonly slug: string
-  } & Record<string, string | Promise<string>>
+// Define props for the page
+interface PageProps {
+  params: {
+    slug: string
+  }
 }
 
-// Update metadata generation to be fully async
+// Generate metadata (server-side)
 export async function generateMetadata(
-  { params }: PageProps, 
+  { params }: PageProps,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const slug = params.slug
   const blogPosts = {
-    'hack-brain': { 
+    'hack-brain': {
       title: 'How to Hack Your Brain',
-      description: 'Strategies for mental optimization'
+      description: 'Strategies for mental optimization',
     },
-    'design-tips': { 
+    'design-tips': {
       title: 'How to Design Clean UI as an Engineer',
-      description: 'UI design principles for developers'
+      description: 'UI design principles for developers',
     },
-    'rejections-dont-define-you': { 
-      title: 'Rejections Don\'t Define You',
-      description: 'Overcoming setbacks in your career'
-    }
+    'rejections-dont-define-you': {
+      title: "Rejections Don't Define You",
+      description: 'Overcoming setbacks in your career',
+    },
   }
 
-  // Ensure type safety and provide fallback
-  const postMetadata = blogPosts[slug as keyof typeof blogPosts] || {
-    title: 'Blog Post',
-    description: 'Detailed blog post'
-  }
+  const postMetadata =
+    blogPosts[slug as keyof typeof blogPosts] || {
+      title: 'Blog Post',
+      description: 'Detailed blog post',
+    }
 
   return {
     title: postMetadata.title,
-    description: postMetadata.description
+    description: postMetadata.description,
   }
 }
 
+// Generate static params (server-side)
 export function generateStaticParams() {
   const blogs = [
     { slug: 'hack-brain' },
@@ -61,111 +64,121 @@ export function generateStaticParams() {
     { slug: 'productivity-tips' },
     { slug: 'tech-trends' },
     { slug: 'career-growth' },
-    { slug: 'coding-best-practices' }
+    { slug: 'coding-best-practices' },
   ]
 
   return blogs.map((blog) => ({
-    slug: blog.slug
+    slug: blog.slug,
   }))
 }
 
-export default function BlogPost({ params }: Readonly<PageProps>) {
-  const { slug } = params;
+// Server Component - renders the page
+export default function BlogPost({ params }: PageProps) {
+  const { slug } = params
 
-  // Get post data or return fallback data
   const blogPosts = {
     'hack-brain': {
       title: 'How to Hack Your Brain',
       date: '2024-10-04',
-      content: '<p>Blog content about hacking your brain...</p>'
+      content: '<p>Blog content about hacking your brain...</p>',
     },
     'design-tips': {
       title: 'How to Design Clean UI as an Engineer',
       date: '2024-08-23',
-      content: '<p>Blog content about design tips...</p>'
+      content: '<p>Blog content about design tips...</p>',
     },
     'crazy-tech-ride': {
       title: 'My Crazy Ride in Tech',
       date: '2024-07-02',
-      content: '<p>Blog content about tech journey...</p>'
+      content: '<p>Blog content about tech journey...</p>',
     },
     'open-source-contribution': {
       title: 'Open Source Contribution Guide',
       date: '2024-06-15',
-      content: '<p>Comprehensive guide to contributing to open source...</p>'
+      content: '<p>Comprehensive guide to contributing to open source...</p>',
     },
     'arc': {
       title: 'Arc Browser: Revolutionizing Web Browsing',
       date: '2024-05-20',
-      content: '<p>Exploring the innovative features of Arc browser...</p>'
+      content: '<p>Exploring the innovative features of Arc browser...</p>',
     },
     'view-counter': {
       title: 'Building a View Counter for Your Blog',
       date: '2024-02-15',
-      content: '<p>A comprehensive guide to implementing a view counter in your web application...</p>'
+      content:
+        '<p>A comprehensive guide to implementing a view counter in your web application...</p>',
     },
     'coding-journey': {
       title: 'My Coding Journey: From Beginner to Professional',
       date: '2024-01-20',
-      content: '<p>A personal reflection on my path in software development, challenges, and growth...</p>'
+      content:
+        '<p>A personal reflection on my path in software development, challenges, and growth...</p>',
     },
     'productivity-tips': {
       title: 'Productivity Hacks for Developers',
       date: '2024-04-15',
-      content: '<p>Practical tips to boost your productivity...</p>'
+      content: '<p>Practical tips to boost your productivity...</p>',
     },
     'tech-trends': {
       title: 'Emerging Tech Trends in 2024',
       date: '2024-03-10',
-      content: '<p>A look at the most exciting technology trends...</p>'
+      content: '<p>A look at the most exciting technology trends...</p>',
     },
     'approach-frontend': {
       title: 'My Approach to Frontend Development',
       date: '2024-02-01',
-      content: '<p>A deep dive into my methodology for building modern web applications...</p>'
+      content:
+        '<p>A deep dive into my methodology for building modern web applications...</p>',
     },
     'career-growth': {
       title: 'Navigating Career Growth in Tech',
       date: '2024-01-15',
-      content: '<p>Strategies and insights for advancing your career in software engineering...</p>'
+      content:
+        '<p>Strategies and insights for advancing your career in software engineering...</p>',
     },
     'coding-best-practices': {
       title: 'Essential Coding Best Practices',
       date: '2024-03-20',
-      content: '<p>Key principles and techniques for writing clean, maintainable code...</p>'
+      content:
+        '<p>Key principles and techniques for writing clean, maintainable code...</p>',
     },
     'developer-tools': {
       title: 'Must-Have Developer Tools in 2024',
       date: '2024-04-01',
-      content: '<p>A curated list of tools that can supercharge your development workflow...</p>'
+      content:
+        '<p>A curated list of tools that can supercharge your development workflow...</p>',
     },
     'javascript-tips': {
       title: 'Advanced JavaScript Tips and Tricks',
       date: '2024-05-10',
-      content: '<p>Lesser-known JavaScript techniques to level up your coding skills...</p>'
+      content:
+        '<p>Lesser-known JavaScript techniques to level up your coding skills...</p>',
     },
     'react-optimization': {
       title: 'Optimizing React Applications',
       date: '2024-06-01',
-      content: '<p>Performance optimization strategies for React applications...</p>'
+      content: '<p>Performance optimization strategies for React applications...</p>',
     },
     'startup-engineering': {
       title: 'Engineering at a Startup: My Experience',
       date: '2024-07-15',
-      content: '<p>Insights and lessons learned from working at early-stage startups...</p>'
+      content:
+        '<p>Insights and lessons learned from working at early-stage startups...</p>',
     },
     'rejections-dont-define-you': {
-      title: 'Rejections Don\'t Define You',
+      title: "Rejections Don't Define You",
       date: '2024-08-01',
-      content: '<p>A personal reflection on overcoming setbacks and finding strength in rejection...</p>'
-    }
+      content:
+        '<p>A personal reflection on overcoming setbacks and finding strength in rejection...</p>',
+    },
   }
 
-  const post = blogPosts[slug as keyof typeof blogPosts] || {
-    title: 'Post Not Found',
-    date: 'No date available',
-    content: '<p>This blog post could not be found.</p>',
-  }
+  const post =
+    blogPosts[slug as keyof typeof blogPosts] || {
+      title: 'Post Not Found',
+      date: 'No date available',
+      content: '<p>This blog post could not be found.</p>',
+    }
 
   return (
     <section className="flex items-center justify-center w-full flex-col">
