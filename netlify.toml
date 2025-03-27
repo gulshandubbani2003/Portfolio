@@ -8,7 +8,7 @@
 [build.environment]
   NODE_VERSION = "20"
   NEXT_TELEMETRY_DISABLED = "1"
-  GO_VERSION = "1.21"
+  GO_VERSION = "1.24.1"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
