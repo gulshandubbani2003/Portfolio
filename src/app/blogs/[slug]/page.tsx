@@ -1,11 +1,10 @@
 // src/app/blogs/[slug]/page.tsx
-// No 'use client' directive - this is a Server Component
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import NewsletterForm from '@/components/NewsletterForm'
 import { Metadata, ResolvingMetadata } from 'next'
 
-// Define props for the page
+// Define props for the page with stricter typing for params
 interface PageProps {
   params: {
     slug: string
@@ -73,7 +72,7 @@ export function generateStaticParams() {
 }
 
 // Server Component - renders the page
-export default function BlogPost({ params }: PageProps) {
+export default async function BlogPost({ params }: PageProps) {
   const { slug } = params
 
   const blogPosts = {
