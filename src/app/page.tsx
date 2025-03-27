@@ -1,6 +1,12 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
 import NewsletterForm from '@/components/NewsletterForm'
+import dynamic from 'next/dynamic'
+
+const MotionDiv = dynamic(() => import('framer-motion').then((mod) => mod.motion.div), {
+  ssr: false
+})
 
 export default function Home() {
   // Experience data
@@ -131,7 +137,15 @@ export default function Home() {
             </h1>
             <div className="grid grid-cols-2 md:grid-cols-3 w-full gap-x-10 gap-y-5">
               {projects.map((project, index) => (
-                <div key={index} className="mt-5">
+                <MotionDiv 
+                  key={index} 
+                  className="mt-5"
+                  whileHover={{ 
+                    scale: 1.05,
+                    transition: { duration: 0.2 }
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   <a target="_blank" rel="noopener noreferrer" href={project.link}>
                     <div className="text-sm mb-1 font-medium text-gray-900 dark:text-gray-300">
                       {project.title}
@@ -140,33 +154,46 @@ export default function Home() {
                       {project.description}
                     </div>
                   </a>
-                </div>
+                </MotionDiv>
               ))}
             </div>
           </div>
 
-          {/* Latest Blogs */}
+          {/* Blogs Page */}
           <div className="">
             <h1 className="font-medium text-gray-900 dark:text-white mb-4 text-lg">
               Latest Blogs
             </h1>
             {blogs.map((blog, index) => (
-              <Link
+              <MotionDiv
                 key={index}
-                className="flex flex-col space-y-1 mb-4 py-2"
-                href={`/blogs/${blog.slug}`}
+                whileHover={{ 
+                  y: -5,
+                  transition: { 
+                    duration: 0.2,
+                    type: "spring",
+                    stiffness: 300
+                  }
+                }}
+                whileTap={{ scale: 0.99 }}
+                className="rounded-lg"
               >
-                <div className="w-full flex flex-col">
-                  <div className="flex items-center gap-2 justify-between">
-                    <p className="text-gray-900 dark:text-gray-100 text-lg font-heading tracking-tight">
-                      {blog.title}
-                    </p>
-                    <p className="text-gray-500 dark:text-gray-400 text-sm tracking-tight mt-1">
-                      {blog.date}
-                    </p>
+                <Link
+                  className="flex flex-col space-y-1 mb-4 py-2 px-2"
+                  href={`/blogs/${blog.slug}`}
+                >
+                  <div className="w-full flex flex-col">
+                    <div className="flex items-center gap-2 justify-between">
+                      <p className="text-gray-900 dark:text-gray-100 text-lg font-heading tracking-tight">
+                        {blog.title}
+                      </p>
+                      <p className="text-gray-500 dark:text-gray-400 text-sm tracking-tight mt-1">
+                        {blog.date}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </MotionDiv>
             ))}
             <Link
               className="hover:underline text-sm"
@@ -177,8 +204,21 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Newsletter */}
-          <NewsletterForm />
+          {/* Newsletter Page */}
+          <MotionDiv
+            whileHover={{ 
+              y: -5,
+              transition: { 
+                duration: 0.2,
+                type: "spring",
+                stiffness: 300
+              }
+            }}
+            whileTap={{ scale: 0.99 }}
+            className="rounded-lg p-2"
+          >
+            <NewsletterForm />
+          </MotionDiv>
         </div>
       </div>
     </div>
