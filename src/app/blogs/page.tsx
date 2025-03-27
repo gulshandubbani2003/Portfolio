@@ -1,6 +1,12 @@
+'use client'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 
-export default function Blogs() {
+const MotionDiv = dynamic(() => import('framer-motion').then((mod) => mod.motion.div), {
+  ssr: false
+})
+
+export default function BlogsPage() {
   // Blog data
   const blogs = [
     {
@@ -52,31 +58,39 @@ export default function Blogs() {
 
   return (
     <div className="w-full max-w-3xl">
-      <div style={{ opacity: 1, transform: 'none' }}>
-        <div className="mb-5 flex flex-col gap-3 items-start w-full">
-          <div className="w-full">
-            <div className="w-full">
-              <div className="flex flex-col gap-3 w-full">
-                {blogs.map((blog, index) => (
-                  <Link key={index} href={`/blogs/${blog.slug}`}>
-                    <div className="flex flex-col w-full space-y-1 rounded-lg py-3 pl-3" tabIndex={0} style={{ opacity: 1 }}>
-                      <div className="w-full flex flex-col">
-                        <div className="flex items-center gap-2 flex-row justify-between">
-                          <p className="text-gray-900 dark:text-gray-100 text-lg font-heading tracking-tight">
-                            {blog.title}
-                          </p>
-                          <p className="text-gray-500 dark:text-gray-400 text-sm tracking-tight mt-1">
-                            {blog.date}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
+      <h1 className="font-medium text-gray-900 dark:text-white mb-6 text-2xl">
+        All Blogs
+      </h1>
+      <div className="space-y-4">
+        {blogs.map((blog, index) => (
+          <MotionDiv
+            key={index}
+            whileHover={{ 
+              y: -5,
+              transition: { 
+                duration: 0.2,
+                type: "spring",
+                stiffness: 300
+              }
+            }}
+            whileTap={{ scale: 0.99 }}
+            className="rounded-lg"
+          >
+            <Link
+              href={`/blogs/${blog.slug}`}
+              className="block py-4 px-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
+            >
+              <div className="flex justify-between items-center">
+                <h2 className="text-lg font-medium text-gray-900 dark:text-white">
+                  {blog.title}
+                </h2>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  {blog.date}
+                </span>
               </div>
-            </div>
-          </div>
-        </div>
+            </Link>
+          </MotionDiv>
+        ))}
       </div>
     </div>
   )

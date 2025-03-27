@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 import { ThemeProvider } from '@/components/ThemeProvider'
 
 export const metadata: Metadata = {
-  title: 'anmol mishra',
+  title: 'Anmol Mishra',
   description: 'Engineer & Designer',
 }
 

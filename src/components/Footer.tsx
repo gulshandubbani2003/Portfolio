@@ -3,7 +3,7 @@ export default function Footer() {
 
   return (
     <div className="text-center flex items-center justify-center flex-col mt-16 text-sm">
-      <div>© {currentYear} - anmol mishra</div>
+      <div>© {currentYear} - Anmol Mishra</div>
       <div className="mt-4">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto">
           <path d="M12.5 16C12.5 16.2761 12.2761 16.5 12 16.5C11.7239 16.5 11.5 16.2761 11.5 16L11.5 8C11.5 7.72386 11.7239 7.5 12 7.5C12.2761 7.5 12.5 7.72386 12.5 8L12.5 16Z" fill="currentColor" />
