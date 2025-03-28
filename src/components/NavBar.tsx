@@ -1,24 +1,24 @@
-'use client'
+'use client';
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import Image from 'next/image'
-import { useTheme } from 'next-themes'
-import { Twitter, Github, Linkedin, Moon, Sun } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { motion } from 'framer-motion'
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Image from 'next/image';
+import { useTheme } from 'next-themes';
+import { Twitter, Github, Linkedin, Moon, Sun } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { motion } from 'framer-motion';
 
 export default function NavBar() {
-  const pathname = usePathname()
-  const { theme, setTheme } = useTheme()
-  const isDark = theme === 'dark'
+  const pathname = usePathname();
+  const { theme, setTheme } = useTheme();
+  const isDark = theme === 'dark';
 
   const navLinks = [
     { name: 'About', href: '/' },
     { name: 'Blogs', href: '/blogs' },
     { name: 'Newsletter', href: '/newsletter' },
-    { name: 'Contact', href: '/contact' }
-  ]
+    { name: 'Contact', href: '/contact' },
+  ];
 
   return (
     <div className="w-full max-w-3xl">
@@ -36,7 +36,7 @@ export default function NavBar() {
           <h1 className="font-medium text-gray-900 dark:text-gray-100 mt-2 text-xl font-heading">
             Anmol Mishra
           </h1>
-          <p className="text-gray-500 dark:text-gray-400">AI Researcher &amp; Quant Dev</p>
+          <p className="text-gray-500 dark:text-gray-400">AI Researcher & Quant Dev</p>
           <div className="flex flex-row justify-between items-center mt-3 mb-8">
             <div className="flex flex-row items-center justify-between w-full">
               <div className="flex flex-row gap-x-3">
@@ -59,7 +59,7 @@ export default function NavBar() {
                 <motion.div
                   initial={false}
                   animate={{ rotate: isDark ? 180 : 0 }}
-                  transition={{ duration: 0.2, ease: "easeInOut" }}
+                  transition={{ duration: 0.2, ease: 'easeInOut' }}
                 >
                   {isDark ? <Sun size={18} /> : <Moon size={18} />}
                 </motion.div>
@@ -76,8 +76,8 @@ export default function NavBar() {
                   className={`
                     text-sm transition-colors px-2 py-1 rounded-md relative
                     ${pathname === link.href
-                      ? 'text-white bg-gray-900 dark:bg-gray-900'
-                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'}
+                      ? 'text-white bg-gray-900 dark:bg-gray-900 hover:text-white dark:hover:text-white'
+                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-transparent dark:hover:bg-transparent'}
                   `}
                 >
                   <span className="relative z-10 tracking-tighter">{link.name}</span>
@@ -91,5 +91,5 @@ export default function NavBar() {
         </div>
       </div>
     </div>
-  )
-}
+  );
+} 

@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
-// Define the props type with readonly modifier
+// Define the props type with params as a Promise
 type PageProps = {
-  readonly params: Promise<{ readonly slug: string }>;
+  params: Promise<{ slug: string }>;
 };
 
 const newsletterIssues = {
@@ -64,9 +64,7 @@ export function generateStaticParams() {
   return Object.keys(newsletterIssues).map((slug) => ({ slug }));
 }
 
-export default async function NewsletterIssue({ 
-  params 
-}: Readonly<PageProps>) {
+export default async function NewsletterIssue({ params }: PageProps) {
   const { slug } = await params; // Resolve the Promise to access slug
 
   // Get issue data or return fallback data
