@@ -7,6 +7,7 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  GO_VERSION = "1.19"
   NEXT_TELEMETRY_DISABLED = "1"
   # Removed GO_VERSION unless you need it for a specific reason
 
