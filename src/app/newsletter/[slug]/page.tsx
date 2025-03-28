@@ -1,5 +1,10 @@
-import Link from 'next/link'
-import { ArrowLeft } from 'lucide-react'
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
+
+// Define the props type with readonly modifier
+type PageProps = {
+  readonly params: Promise<{ readonly slug: string }>;
+};
 
 const newsletterIssues = {
   '7': {
@@ -53,21 +58,23 @@ const newsletterIssues = {
     date: 'January 30, 2024',
     content: '<p>This is sample content for Techx #1.</p>',
   },
+};
+
+export function generateStaticParams() {
+  return Object.keys(newsletterIssues).map((slug) => ({ slug }));
 }
 
-export async function generateStaticParams() {
-  return Object.keys(newsletterIssues).map(slug => ({ slug }));
-}
-
-export default function NewsletterIssue({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function NewsletterIssue({ 
+  params 
+}: Readonly<PageProps>) {
+  const { slug } = await params; // Resolve the Promise to access slug
 
   // Get issue data or return fallback data
   const issue = newsletterIssues[slug as keyof typeof newsletterIssues] || {
     number: 0,
     date: 'No date available',
     content: '<p>This newsletter issue could not be found.</p>',
-  }
+  };
 
   return (
     <section className="flex items-center justify-center w-full flex-col">
@@ -93,5 +100,5 @@ export default function NewsletterIssue({ params }: { params: { slug: string } }
         />
       </div>
     </section>
-  )
+  );
 }
