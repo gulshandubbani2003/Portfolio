@@ -36,7 +36,7 @@ export default function NavBar() {
           <h1 className="font-medium text-gray-900 dark:text-gray-100 mt-2 text-xl font-heading">
             Anmol Mishra
           </h1>
-          <p className="text-gray-500 dark:text-gray-400">Engineer &amp; Designer</p>
+          <p className="text-gray-500 dark:text-gray-400">AI Researcher &amp; Quant Dev</p>
           <div className="flex flex-row justify-between items-center mt-3 mb-8">
             <div className="flex flex-row items-center justify-between w-full">
               <div className="flex flex-row gap-x-3">

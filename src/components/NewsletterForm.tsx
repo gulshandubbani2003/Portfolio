@@ -11,7 +11,7 @@ interface NewsletterFormProps {
 
 export default function NewsletterForm({
   title = "My Newsletter",
-  description = "Stay ahead of the curve with my monthly newsletter called Luminary. Receive valuable insights on the latest trends, techniques, and tools in web development and design."
+  description = "Stay ahead of the curve with my monthly newsletter called Techx. Receive valuable insights on the latest trends, techniques, and tools in web development and design."
 }: NewsletterFormProps) {
   const [email, setEmail] = useState('')
 

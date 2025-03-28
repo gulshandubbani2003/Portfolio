@@ -84,7 +84,7 @@ export default function Newsletter() {
                       {issue.date}
                     </p>
                     <p className="text-gray-900 dark:text-gray-300 text-xl font-heading tracking-tight mt-2">
-                      Luminary #{issue.number}
+                      Techx #{issue.number}
                     </p>
                   </div>
                 </div>

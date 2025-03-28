@@ -12,22 +12,22 @@ export default function Home() {
   // Experience data
   const experiences = [
     {
-      title: 'Frontend Lead',
-      company: 'Agno.com',
+      title: 'Research Consultant',
+      company: 'WorldQuant',
       period: 'PRESENT',
       isPresent: true,
       color: 'bg-green-500' // Green for current job
     },
     {
-      title: 'Founding Engineer',
-      company: 'Speedybrand (YC-W23)',
+      title: 'AI Engineer Intern',
+      company: 'HDFC Securities',
       period: '',
       isPresent: false,
       color: 'bg-blue-500' // Blue for past job
     },
     {
-      title: 'Founding Engineer',
-      company: 'Maya Labs (YC-S22)',
+      title: 'Quant Researcher',
+      company: 'Stealth Crypto Quant Startup',
       period: '',
       isPresent: false,
       color: 'bg-purple-500' // Purple for another past job
@@ -76,12 +76,12 @@ export default function Home() {
       slug: 'hack-brain',
     },
     {
-      title: 'How to Design Clean UI as an Engineer',
+      title: 'Three Observations',
       date: '2024-08-23',
-      slug: 'design-tips',
+      slug: 'Three-Observations',
     },
     {
-      title: 'My Crazy Ride in Tech',
+      title: 'What I Wish Someone Had Told Me',
       date: '2024-07-02',
       slug: 'crazy-tech-ride',
     },
@@ -94,7 +94,7 @@ export default function Home() {
           {/* Introduction */}
           <div>
             <p className="text-gray-500 dark:text-gray-400 text-lg font-[400] tracking-tighter">
-              Hello! I'm anmol, a Lead Software Engineer &amp; Designer. Passionate about crafting tools that empower developers and designers to express themselves seamlessly.
+            Hey! I’m Anmol, a CS junior at MIT. I’m into quant finance, AI, and blockchain. Interested in tech startups and currently building a crypto DEX.
             </p>
           </div>
 

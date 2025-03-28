@@ -15,27 +15,27 @@ export default function BlogsPage() {
       slug: 'hack-brain',
     },
     {
-      title: 'How to Design Clean UI as an Engineer',
+      title: 'Three Observations',
       date: '2024-08-23',
       slug: 'design-tips',
     },
     {
-      title: 'My Crazy Ride in Tech',
+      title: 'What I Wish Someone Had Told Me',
       date: '2024-07-02',
       slug: 'crazy-tech-ride',
     },
     {
-      title: 'How to Add a View Counter in Next.js 14',
+      title: 'The Strength of Being Misunderstood',
       date: '2024-06-21',
       slug: 'view-counter',
     },
     {
-      title: 'Do quality open-source contribution',
+      title: 'Hard Startups',
       date: '2024-06-08',
       slug: 'open-source-contribution',
     },
     {
-      title: 'Rejections don\'t define you',
+      title: 'The Right Kind of Stubborn',
       date: '2024-03-31',
       slug: 'rejections-dont-define-you',
     },

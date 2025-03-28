@@ -6,9 +6,9 @@ const newsletterIssues = {
     number: 7,
     date: 'July 30, 2024',
     content: `
-      <h2>Luminary #7: The Power of Design Systems</h2>
+      <h2>Techx #7: The Power of Design Systems</h2>
       <p>Hello friends,</p>
-      <p>Welcome to the seventh edition of Luminary. This month, we're diving into design systems and how they can transform your workflow.</p>
+      <p>Welcome to the seventh edition of Techx. This month, we're diving into design systems and how they can transform your workflow.</p>
       <h3>1. Why Design Systems Matter</h3>
       <p>A good design system can save you hours of work and make your projects more consistent. They're not just for large companies anymore.</p>
       <h3>2. Tools of the Month</h3>
@@ -26,32 +26,32 @@ const newsletterIssues = {
   '6': {
     number: 6,
     date: 'June 30, 2024',
-    content: '<p>This is sample content for Luminary #6.</p>',
+    content: '<p>This is sample content for Techx #6.</p>',
   },
   '5': {
     number: 5,
     date: 'May 30, 2024',
-    content: '<p>This is sample content for Luminary #5.</p>',
+    content: '<p>This is sample content for Techx #5.</p>',
   },
   '4': {
     number: 4,
     date: 'April 31, 2024',
-    content: '<p>This is sample content for Luminary #4.</p>',
+    content: '<p>This is sample content for Techx #4.</p>',
   },
   '3': {
     number: 3,
     date: 'March 31, 2024',
-    content: '<p>This is sample content for Luminary #3.</p>',
+    content: '<p>This is sample content for Techx #3.</p>',
   },
   '2': {
     number: 2,
     date: 'February 29, 2024',
-    content: '<p>This is sample content for Luminary #2.</p>',
+    content: '<p>This is sample content for Techx #2.</p>',
   },
   '1': {
     number: 1,
     date: 'January 30, 2024',
-    content: '<p>This is sample content for Luminary #1.</p>',
+    content: '<p>This is sample content for Techx #1.</p>',
   },
 }
 
@@ -80,7 +80,7 @@ export default function NewsletterIssue({ params }: { params: { slug: string } }
         </div>
 
         <h1 className="title font-medium text-2xl md:text-4xl tracking-tighter font-heading">
-          Luminary #{issue.number}
+          Techx #{issue.number}
         </h1>
 
         <div className="flex justify-start gap-2 items-center mt-4 mb-8 text-sm text-neutral-600 dark:text-neutral-400">

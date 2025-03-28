@@ -7,7 +7,7 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 
 export const metadata: Metadata = {
   title: 'Anmol Mishra',
-  description: 'Engineer & Designer',
+  description: 'AI Researcher & Quant Dev',
 }
 
 export default function RootLayout({
