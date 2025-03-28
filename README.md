@@ -71,4 +71,4 @@ MIT License
 ## Contact
 - Twitter: [@trex3x00](https://twitter.com/trex3x00)
 - Email: anmolx.work@gmail.com
-- Personal Site: [anmol.co](https://anmolxred.netlify.app/)
+- Personal Site: [clickhere](https://anmolxred.netlify.app/)
