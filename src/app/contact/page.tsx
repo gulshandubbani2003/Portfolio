@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="w-full max-w-3xl relative -top-25">
+    <div className="w-full max-w-3xl relative -top-40">
       <div style={{ opacity: 1, transform: 'none' }}>
         <p className="text-gray-500 mb-4">
           Let's work on something together, you can book a {' '}
