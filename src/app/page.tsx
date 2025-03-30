@@ -61,9 +61,9 @@ export default function Home() {
       icon: '',
     },
     {
-      title: 'anmol.co',
+      title: 'Portfolio',
       description: 'My personal website, blogs and newsletter.',
-      link: 'https://anmol.co',
+      link: 'https://anmolxred.netlify.app',
       icon: '',
     },
   ]
