@@ -8,6 +8,9 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 export const metadata: Metadata = {
   title: 'Anmol Mishra',
   description: 'AI Researcher & Quant Dev',
+  icons: {
+    icon: '/images/projects/favicone.ico',
+  },
 }
 
 export default function RootLayout({
