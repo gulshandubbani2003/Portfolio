@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Anmol Mishra',
   description: 'AI Researcher & Quant Dev',
   icons: {
-    icon: '/images/projects/favicone.ico',
+    icon: '/images/projects/faviconfinal.ico',
   },
 }
 
