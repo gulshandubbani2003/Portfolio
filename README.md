@@ -10,7 +10,7 @@ A modern, responsive personal portfolio website built with Next.js 15, showcasin
 - Tailwind CSS
 - Framer Motion
 - next-themes
-- Vercel/Netlify Deployment
+- Netlify Deployment
 
 ## Features
 - Dark/Light Mode Toggle
