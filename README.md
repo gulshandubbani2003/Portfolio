@@ -58,16 +58,6 @@ npm run dev
 ## Deployment
 Easily deployable on Vercel or Netlify with built-in Next.js support.
 
-## Contributing
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## License
-MIT License
-
 ## Contact
 - Twitter: [@trex3x00](https://twitter.com/trex3x00)
 - Email: anmolx.work@gmail.com
