@@ -1,7 +1,7 @@
 # Anmol Mishra's Personal Portfolio
 
 ## Overview
-A modern, responsive personal portfolio website built with Next.js 15, showcasing projects, blogs, and professional journey.
+Minimalistic, responsive personal portfolio website built with Next.js 15, showcasing projects, blogs, and professional journey.
 
 ## Tech Stack
 - Next.js 15
