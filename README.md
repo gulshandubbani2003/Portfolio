@@ -55,9 +55,6 @@ npm install
 npm run dev
 ```
 
-## Deployment
-Easily deployable on Vercel or Netlify with built-in Next.js support.
-
 ## Contact
 - Twitter: [@trex3x00](https://twitter.com/trex3x00)
 - Email: anmolx.work@gmail.com
