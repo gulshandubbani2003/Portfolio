@@ -1,7 +1,7 @@
 # Anmol Mishra's Personal Portfolio
 
 ## Overview
-A modern, responsive personal portfolio website built with Next.js 15, showcasing projects, blogs, and professional journey.
+Minimalistic, responsive personal portfolio website built with Next.js 15, showcasing projects, blogs, and professional journey.
 
 ## Tech Stack
 - Next.js 15
@@ -10,7 +10,7 @@ A modern, responsive personal portfolio website built with Next.js 15, showcasin
 - Tailwind CSS
 - Framer Motion
 - next-themes
-- Vercel/Netlify Deployment
+- Netlify Deployment
 
 ## Features
 - Dark/Light Mode Toggle
@@ -54,19 +54,6 @@ cd portfolio
 npm install
 npm run dev
 ```
-
-## Deployment
-Easily deployable on Vercel or Netlify with built-in Next.js support.
-
-## Contributing
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## License
-MIT License
 
 ## Contact
 - Twitter: [@trex3x00](https://twitter.com/trex3x00)
