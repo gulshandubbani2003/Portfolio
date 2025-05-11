@@ -7,11 +7,20 @@ import { useTheme } from 'next-themes';
 import { Twitter, Github, Linkedin, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 export default function NavBar() {
   const pathname = usePathname();
-  const { theme, setTheme } = useTheme();
-  const isDark = theme === 'dark';
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  
+  // After mounting, we can access the theme
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  
+  // Use resolvedTheme which is guaranteed to be accurate after hydration
+  const isDark = mounted && (resolvedTheme === 'dark');
 
   const navLinks = [
     { name: 'About', href: '/' },
