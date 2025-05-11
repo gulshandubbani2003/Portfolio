@@ -86,7 +86,7 @@ export default async function BlogPost({ params }: PageProps) {
       content: `<p>Artificial General Intelligence (AGI) is poised to reshape the world, bringing immense opportunities and challenges. Below are ten critical observations regarding its development and impact.</p>
 
       <h2>1. AGI: The Next Evolutionary Step</h2>
-      <p>Humanity has always sought to build better tools, and AGI is the natural next phase of innovation. Like electricity, transistors, and the internet, AGI will redefine the boundaries of what’s possible.</p>
+      <p>Humanity has always sought to build better tools, and AGI is the natural next phase of innovation. Like electricity, transistors, and the internet, AGI will redefine the boundaries of what's possible.</p>
 
       <h2>2. Predictable Scaling of Intelligence</h2>
       <p>AI performance scales logarithmically with increased compute, data, and resources. This means continued investment will lead to steady and predictable improvements.</p>
@@ -101,7 +101,7 @@ export default async function BlogPost({ params }: PageProps) {
       <p>AI is transitioning from simple chatbots to highly capable virtual assistants, capable of handling complex tasks in software engineering, research, and more.</p>
 
       <h2>6. The Economic Shift Will Be Unprecedented</h2>
-      <p>AI’s impact on productivity and automation is comparable to the introduction of transistors. Many industries will be transformed as AI becomes embedded in daily life.</p>
+      <p>AI's impact on productivity and automation is comparable to the introduction of transistors. Many industries will be transformed as AI becomes embedded in daily life.</p>
 
       <h2>7. The Nature of Work Will Evolve</h2>
       <p>Traditional jobs will shift, and new roles will emerge. Adaptability and problem-solving will become key skills as AI reshapes the workforce.</p>
@@ -126,7 +126,7 @@ export default async function BlogPost({ params }: PageProps) {
       <p>Cohesive teams, the right combination of calmness and urgency, and unreasonable commitment are how things get finished. Long-term orientation is in short supply; try not to worry about what people think in the short term, which will get easier over time.</p>
 
       <h2>2. Audacious Ideas Motivate</h2>
-      <p>It is easier for a team to do a hard thing that really matters than to do an easy thing that doesn’t really matter; audacious ideas motivate people.</p>
+      <p>It is easier for a team to do a hard thing that really matters than to do an easy thing that doesn't really matter; audacious ideas motivate people.</p>
 
       <h2>3. Incentives as Superpowers</h2>
       <p>Incentives are superpowers; set them carefully.</p>
@@ -141,7 +141,7 @@ export default async function BlogPost({ params }: PageProps) {
       <p>Fight bullshit and bureaucracy every time you see it and get other people to fight it too. Do not let the org chart get in the way of people working productively together.</p>
 
       <h2>7. Focus on Outcomes</h2>
-      <p>Outcomes are what count; don’t let good process excuse bad results.</p>
+      <p>Outcomes are what count; don't let good process excuse bad results.</p>
 
       <h2>8. Spend Time Recruiting</h2>
       <p>Spend more time recruiting. Take risks on high-potential people with a fast rate of improvement. Look for evidence of getting stuff done in addition to intelligence.</p>
@@ -150,10 +150,10 @@ export default async function BlogPost({ params }: PageProps) {
       <p>Superstars are even more valuable than they seem, but you have to evaluate people on their net impact on the performance of the organization.</p>
 
       <h2>10. Fast Iteration</h2>
-      <p>Fast iteration can make up for a lot; it’s usually ok to be wrong if you iterate quickly. Plans should be measured in decades, execution should be measured in weeks.</p>
+      <p>Fast iteration can make up for a lot; it's usually ok to be wrong if you iterate quickly. Plans should be measured in decades, execution should be measured in weeks.</p>
 
       <h2>11. Respect Business Physics</h2>
-      <p>Don’t fight the business equivalent of the laws of physics.</p>
+      <p>Don't fight the business equivalent of the laws of physics.</p>
 
       <h2>12. Inspiration is Perishable</h2>
       <p>Inspiration is perishable and life goes by fast. Inaction is a particularly insidious type of risk.</p>
@@ -173,16 +173,16 @@ export default async function BlogPost({ params }: PageProps) {
     'view-counter': {
       title: 'The Strength of Being Misunderstood',
       date: '2024-09-20',
-      content: `<p>A founder recently asked me how to stop caring what other people think. I didn’t have an answer, and after reflecting on it more, I think it’s the wrong question.</p>
+      content: `<p>A founder recently asked me how to stop caring what other people think. I didn't have an answer, and after reflecting on it more, I think it's the wrong question.</p>
 
       <h2>1. Caring About Opinions</h2>
-      <p>Almost everyone cares what someone thinks (though caring what everyone thinks is definitely a mistake), and it’s probably important. Caring too much makes you a sheep. But you need to be at least a little in tune with others to do something useful for them.</p>
+      <p>Almost everyone cares what someone thinks (though caring what everyone thinks is definitely a mistake), and it's probably important. Caring too much makes you a sheep. But you need to be at least a little in tune with others to do something useful for them.</p>
 
       <h2>2. Degrees of Freedom</h2>
-      <p>It seems like there are two degrees of freedom: you can choose the people whose opinions you care about (and on what subjects), and you can choose the timescale you care about them on. Most people figure out the former but the latter doesn’t seem to get much attention.</p>
+      <p>It seems like there are two degrees of freedom: you can choose the people whose opinions you care about (and on what subjects), and you can choose the timescale you care about them on. Most people figure out the former but the latter doesn't seem to get much attention.</p>
 
       <h2>3. Impressive People and Opinions</h2>
-      <p>The most impressive people I know care a lot about what people think, even people whose opinions they really shouldn’t value (a surprising numbers of them do something like keeping a folder of screenshots of tweets from haters). But what makes them unusual is that they generally care about other people’s opinions on a very long time horizon—as long as the history books get it right, they take some pride in letting the newspapers get it wrong.</p>
+      <p>The most impressive people I know care a lot about what people think, even people whose opinions they really shouldn't value (a surprising numbers of them do something like keeping a folder of screenshots of tweets from haters). But what makes them unusual is that they generally care about other people's opinions on a very long time horizon—as long as the history books get it right, they take some pride in letting the newspapers get it wrong.</p>
 
       <h2>4. Long-Term High-Status</h2>
       <p>You should trade being short-term low-status for being long-term high-status, which most people seem unwilling to do. A common way this happens is by eventually being right about an important but deeply non-consensus bet. But there are lots of other ways–the key observation is that as long as you are right, being misunderstood by most people is a strength not a weakness. You and a small group of rebels get the space to solve an important problem that might otherwise not get solved.</p>`,
@@ -190,25 +190,25 @@ export default async function BlogPost({ params }: PageProps) {
     'open-source-contribution': {
       title: 'Hard Startups',
       date: '2024-10-10',
-      content: `<p>The most counterintuitive secret about startups is that it’s often easier to succeed with a hard startup than an easy one. A hard startup requires a lot more money, time, coordination, or technological development than most startups. A good hard startup is one that will be valuable if it works (not all hard problems are worth solving!).</p>
+      content: `<p>The most counterintuitive secret about startups is that it's often easier to succeed with a hard startup than an easy one. A hard startup requires a lot more money, time, coordination, or technological development than most startups. A good hard startup is one that will be valuable if it works (not all hard problems are worth solving!).</p>
 
-      <p>I remember when Instagram started to get really popular—it felt like you couldn’t go a day without hearing about another photo sharing startup. That year, probably over 1,000 photo sharing startups were funded, while there were fewer than ten nuclear fusion startups in existence.</p>
+      <p>I remember when Instagram started to get really popular—it felt like you couldn't go a day without hearing about another photo sharing startup. That year, probably over 1,000 photo sharing startups were funded, while there were fewer than ten nuclear fusion startups in existence.</p>
 
       <p>Easy startups are easy to start but hard to make successful. The most precious commodity in the startup ecosystem right now is talented people, and for the most part talented people want to work on something they find meaningful.</p>
 
-      <p>A startup eventually has to get a lot of people to join its quest. It’s usually reasonably easy to get the first five or ten people to join—you can offer large equity grants and areas of responsibility. But eventually, what you have to recruit with are the mission of the company, the likelihood of massive success, and the quality of the people there.</p>
+      <p>A startup eventually has to get a lot of people to join its quest. It's usually reasonably easy to get the first five or ten people to join—you can offer large equity grants and areas of responsibility. But eventually, what you have to recruit with are the mission of the company, the likelihood of massive success, and the quality of the people there.</p>
 
-      <p>Few recruiting messages are as powerful (when true) as “the world needs this, it won’t happen any time soon if we don’t do it, and we are much less likely to succeed if you don’t join.”</p>
+      <p>Few recruiting messages are as powerful (when true) as "the world needs this, it won't happen any time soon if we don't do it, and we are much less likely to succeed if you don't join."</p>
 
       <p>There is a derivative of the Peter Principle at play here—your startup will rise to the level where it can no longer attract enough talented people. (This sometimes holds true for careers too—the limiting factor for many careers eventually becomes how many talented people you know and can get to work with you.)</p>
 
-      <p>An easy startup is a headwind; a hard startup is a tailwind. If people care about your success because you seem committed to doing something significant, it’s a background force helping you with hiring, advice, partnerships, fundraising, etc.</p>
+      <p>An easy startup is a headwind; a hard startup is a tailwind. If people care about your success because you seem committed to doing something significant, it's a background force helping you with hiring, advice, partnerships, fundraising, etc.</p>
 
-      <p>Part of the magic of Silicon Valley is that people default to taking you seriously if you’re willing to be serious—they’ve learned it’s a very expensive mistake, in aggregate, not to. If you want to start a company working on a better way to build homes, gene editing, artificial general intelligence, a new education system, or carbon sequestration, you may actually be able to get it funded, even if you don’t have a degree or much experience.</p>
+      <p>Part of the magic of Silicon Valley is that people default to taking you seriously if you're willing to be serious—they've learned it's a very expensive mistake, in aggregate, not to. If you want to start a company working on a better way to build homes, gene editing, artificial general intelligence, a new education system, or carbon sequestration, you may actually be able to get it funded, even if you don't have a degree or much experience.</p>
 
-      <p>Let yourself become more ambitious—figure out the most interesting version of where what you’re working on could go. Then talk about that big vision and work relentlessly towards it, but always have a reasonable next step. You don’t want step one to be incorporating the company and step two to be going to Mars.</p>
+      <p>Let yourself become more ambitious—figure out the most interesting version of where what you're working on could go. Then talk about that big vision and work relentlessly towards it, but always have a reasonable next step. You don't want step one to be incorporating the company and step two to be going to Mars.</p>
 
-      <p>Be willing to make a very long-term commitment to what you’re doing. Most people aren’t, which is part of the reason they pick “easy” startups. In a world of compounding advantages where most people are operating on a 3 year timeframe and you’re operating on a 10 year timeframe, you’ll have a very large edge.</p>
+      <p>Be willing to make a very long-term commitment to what you're doing. Most people aren't, which is part of the reason they pick "easy" startups. In a world of compounding advantages where most people are operating on a 3 year timeframe and you're operating on a 10 year timeframe, you'll have a very large edge.</p>
 
       <p>Another solution to this problem is to think about startups that can become quite successful with less than ten people. As compensation packages from the giant tech companies continue to increase, I suspect this will become a trend.</p>`,
     },
@@ -257,33 +257,33 @@ export default async function BlogPost({ params }: PageProps) {
       title: 'Putting Ideas into Words',
       date: 'February 2022',
       content: `
-      <p>Writing about something, even something you know well, usually shows you that you didn’t know it as well as you thought. Putting ideas into words is a severe test. The first words you choose are usually wrong; you have to rewrite sentences over and over to get them exactly right. And your ideas won’t just be imprecise, but incomplete too. Half the ideas that end up in an essay will be ones you thought of while you were writing it. Indeed, that’s why I write them.</p>
+      <p>Writing about something, even something you know well, usually shows you that you didn't know it as well as you thought. Putting ideas into words is a severe test. The first words you choose are usually wrong; you have to rewrite sentences over and over to get them exactly right. And your ideas won't just be imprecise, but incomplete too. Half the ideas that end up in an essay will be ones you thought of while you were writing it. Indeed, that's why I write them.</p>
 
-      <p>Once you publish something, the convention is that whatever you wrote was what you thought before you wrote it. These were your ideas, and now you’ve expressed them. But you know this isn’t true. You know that putting your ideas into words changed them. And not just the ideas you published. Presumably, there were others that turned out to be too broken to fix, and those you discarded instead.</p>
+      <p>Once you publish something, the convention is that whatever you wrote was what you thought before you wrote it. These were your ideas, and now you've expressed them. But you know this isn't true. You know that putting your ideas into words changed them. And not just the ideas you published. Presumably, there were others that turned out to be too broken to fix, and those you discarded instead.</p>
 
-      <p>It’s not just having to commit your ideas to specific words that makes writing so exacting. The real test is reading what you’ve written. You have to pretend to be a neutral reader who knows nothing of what’s in your head, only what you wrote. When he reads what you wrote, does it seem correct? Does it seem complete? If you make an effort, you can read your writing as if you were a complete stranger, and when you do, the news is usually bad. It takes me many cycles before I can get an essay past the stranger. But the stranger is rational, so you always can, if you ask him what he needs. If he’s not satisfied because you failed to mention x or didn’t qualify some sentence sufficiently, then you mention x or add more qualifications. Happy now? It may cost you some nice sentences, but you have to resign yourself to that. You just have to make them as good as you can and still satisfy the stranger.</p>
+      <p>It's not just having to commit your ideas to specific words that makes writing so exacting. The real test is reading what you've written. You have to pretend to be a neutral reader who knows nothing of what's in your head, only what you wrote. When he reads what you wrote, does it seem correct? Does it seem complete? If you make an effort, you can read your writing as if you were a complete stranger, and when you do, the news is usually bad. It takes me many cycles before I can get an essay past the stranger. But the stranger is rational, so you always can, if you ask him what he needs. If he's not satisfied because you failed to mention x or didn't qualify some sentence sufficiently, then you mention x or add more qualifications. Happy now? It may cost you some nice sentences, but you have to resign yourself to that. You just have to make them as good as you can and still satisfy the stranger.</p>
 
-      <p>This much, I assume, won’t be that controversial. I think it will accord with the experience of anyone who has tried to write about anything nontrivial. There may exist people whose thoughts are so perfectly formed that they just flow straight into words. But I’ve never known anyone who could do this, and if I met someone who said they could, it would seem evidence of their limitations rather than their ability. Indeed, this is a trope in movies: the guy who claims to have a plan for doing some difficult thing, and who, when questioned further, taps his head and says “It’s all up here.” Everyone watching the movie knows what that means. At best, the plan is vague and incomplete. Very likely, there’s some undiscovered flaw that invalidates it completely. At best, it’s a plan for a plan.</p>
+      <p>This much, I assume, won't be that controversial. I think it will accord with the experience of anyone who has tried to write about anything nontrivial. There may exist people whose thoughts are so perfectly formed that they just flow straight into words. But I've never known anyone who could do this, and if I met someone who said they could, it would seem evidence of their limitations rather than their ability. Indeed, this is a trope in movies: the guy who claims to have a plan for doing some difficult thing, and who, when questioned further, taps his head and says "It's all up here." Everyone watching the movie knows what that means. At best, the plan is vague and incomplete. Very likely, there's some undiscovered flaw that invalidates it completely. At best, it's a plan for a plan.</p>
 
-      <p>In precisely defined domains, it’s possible to form complete ideas in your head. People can play chess in their heads, for example. And mathematicians can do some amount of math in their heads, though they don’t seem to feel sure of a proof over a certain length till they write it down. But this only seems possible with ideas you can express in a formal language. Arguably, what such people are doing is putting ideas into words in their heads. I can, to some extent, write essays in my head. I’ll sometimes think of a paragraph while walking or lying in bed that survives nearly unchanged in the final version. But really, I’m writing when I do this. I’m doing the mental part of writing; my fingers just aren’t moving as I do it.</p>
+      <p>In precisely defined domains, it's possible to form complete ideas in your head. People can play chess in their heads, for example. And mathematicians can do some amount of math in their heads, though they don't seem to feel sure of a proof over a certain length till they write it down. But this only seems possible with ideas you can express in a formal language. Arguably, what such people are doing is putting ideas into words in their heads. I can, to some extent, write essays in my head. I'll sometimes think of a paragraph while walking or lying in bed that survives nearly unchanged in the final version. But really, I'm writing when I do this. I'm doing the mental part of writing; my fingers just aren't moving as I do it.</p>
 
-      <p>You can know a great deal about something without writing about it. Can you ever know so much that you wouldn’t learn more from trying to explain what you know? I don’t think so. I’ve written about at least two subjects I know well — Lisp hacking and startups — and in both cases, I learned a lot from writing about them. In both cases, there were things I didn’t consciously realize till I had to explain them. And I don’t think my experience was anomalous. A great deal of knowledge is unconscious, and experts have, if anything, a higher proportion of unconscious knowledge than beginners.</p>
+      <p>You can know a great deal about something without writing about it. Can you ever know so much that you wouldn't learn more from trying to explain what you know? I don't think so. I've written about at least two subjects I know well — Lisp hacking and startups — and in both cases, I learned a lot from writing about them. In both cases, there were things I didn't consciously realize till I had to explain them. And I don't think my experience was anomalous. A great deal of knowledge is unconscious, and experts have, if anything, a higher proportion of unconscious knowledge than beginners.</p>
 
-      <p>I’m not saying that writing is the best way to explore all ideas. If you have ideas about architecture, presumably the best way to explore them is to build actual buildings. What I’m saying is that however much you learn from exploring ideas in other ways, you’ll still learn new things from writing about them.</p>
+      <p>I'm not saying that writing is the best way to explore all ideas. If you have ideas about architecture, presumably the best way to explore them is to build actual buildings. What I'm saying is that however much you learn from exploring ideas in other ways, you'll still learn new things from writing about them.</p>
 
-      <p>Putting ideas into words doesn’t have to mean writing, of course. You can also do it the old way, by talking. But in my experience, writing is the stricter test. You have to commit to a single, optimal sequence of words. Less can go unsaid when you don’t have tone of voice to carry meaning. And you can focus in a way that would seem excessive in conversation. I’ll often spend two weeks on an essay and reread drafts 50 times. If you did that in conversation, it would seem evidence of some kind of mental disorder. If you’re lazy, of course, writing and talking are equally useless. But if you want to push yourself to get things right, writing is the steeper hill.</p>
+      <p>Putting ideas into words doesn't have to mean writing, of course. You can also do it the old way, by talking. But in my experience, writing is the stricter test. You have to commit to a single, optimal sequence of words. Less can go unsaid when you don't have tone of voice to carry meaning. And you can focus in a way that would seem excessive in conversation. I'll often spend two weeks on an essay and reread drafts 50 times. If you did that in conversation, it would seem evidence of some kind of mental disorder. If you're lazy, of course, writing and talking are equally useless. But if you want to push yourself to get things right, writing is the steeper hill.</p>
 
-      <p>The reason I’ve spent so long establishing this rather obvious point is that it leads to another that many people will find shocking. If writing down your ideas always makes them more precise and more complete, then no one who hasn’t written about a topic has fully formed ideas about it. And someone who never writes has no fully formed ideas about anything nontrivial.</p>
+      <p>The reason I've spent so long establishing this rather obvious point is that it leads to another that many people will find shocking. If writing down your ideas always makes them more precise and more complete, then no one who hasn't written about a topic has fully formed ideas about it. And someone who never writes has no fully formed ideas about anything nontrivial.</p>
 
-      <p>It feels to them as if they do, especially if they’re not in the habit of critically examining their own thinking. Ideas can feel complete. It’s only when you try to put them into words that you discover they’re not. So if you never subject your ideas to that test, you’ll not only never have fully formed ideas, but also never realize it.</p>
+      <p>It feels to them as if they do, especially if they're not in the habit of critically examining their own thinking. Ideas can feel complete. It's only when you try to put them into words that you discover they're not. So if you never subject your ideas to that test, you'll not only never have fully formed ideas, but also never realize it.</p>
 
-      <p>Putting ideas into words is certainly no guarantee that they’ll be right. Far from it. But though it’s not a sufficient condition, it is a necessary one.</p>
+      <p>Putting ideas into words is certainly no guarantee that they'll be right. Far from it. But though it's not a sufficient condition, it is a necessary one.</p>
 
       <h3>Notes</h3>
       <ol>
         <li>Machinery and circuits are formal languages.</li>
         <li>I thought of this sentence as I was walking down the street in Palo Alto.</li>
-        <li>There are two senses of talking to someone: a strict sense in which the conversation is verbal, and a more general sense in which it can take any form, including writing. In the limit case (e.g., Seneca’s letters), conversation in the latter sense becomes essay writing. It can be very useful to talk (in either sense) with other people as you’re writing something. But a verbal conversation will never be more exacting than when you’re talking about something you’re writing.</li>
+        <li>There are two senses of talking to someone: a strict sense in which the conversation is verbal, and a more general sense in which it can take any form, including writing. In the limit case (e.g., Seneca's letters), conversation in the latter sense becomes essay writing. It can be very useful to talk (in either sense) with other people as you're writing something. But a verbal conversation will never be more exacting than when you're talking about something you're writing.</li>
       </ol>
       `,
     },
@@ -315,7 +315,7 @@ export default async function BlogPost({ params }: PageProps) {
         </div>
 
         <article
-          className="prose prose-quoteless prose-gray max-w-3xl"
+          className="prose prose-quoteless prose-gray dark:prose-invert max-w-3xl dark:text-gray-200"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 

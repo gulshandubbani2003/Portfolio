@@ -84,6 +84,35 @@ const config = {
             'blockquote p:first-of-type::after': { content: 'none' },
           },
         },
+        DEFAULT: {
+          css: {
+            maxWidth: '100%',
+          },
+        },
+        dark: {
+          css: {
+            color: 'hsl(var(--foreground))',
+            h1: { color: 'hsl(var(--foreground))' },
+            h2: { color: 'hsl(var(--foreground))' },
+            h3: { color: 'hsl(var(--foreground))' },
+            h4: { color: 'hsl(var(--foreground))' },
+            h5: { color: 'hsl(var(--foreground))' },
+            h6: { color: 'hsl(var(--foreground))' },
+            strong: { color: 'hsl(var(--foreground))' },
+            code: { color: 'hsl(var(--foreground))' },
+            figcaption: { color: 'hsl(var(--muted-foreground))' },
+            blockquote: { color: 'hsl(var(--muted-foreground))' },
+            a: { 
+              color: 'hsl(var(--primary))',
+              '&:hover': {
+                color: 'hsl(var(--primary))',
+              },
+            },
+            li: {
+              '&::marker': { color: 'hsl(var(--muted-foreground))' },
+            },
+          },
+        },
       },
     },
   },
