@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import NewsletterForm from '@/components/NewsletterForm';
 import { Metadata, ResolvingMetadata } from 'next';
 
 // Define the props type with params as a Promise
@@ -76,9 +75,20 @@ export default async function BlogPost({ params }: PageProps) {
 
   const blogPosts = {
     'hack-brain': {
-      title: 'How to Hack Your Brain',
+      title: 'Fierce Nerds',
       date: '2024-10-04',
-      content: `<p>Understanding cognitive processes and mental performance...</p>`,
+      content: `<p>Nerds are often seen as quiet and awkward, but that's only in social settings where they're out of their element—like quarterbacks at physics symposia. In truth, some nerds are fiercely competitive, confident, intelligent, and driven.</p>
+
+      <p>These fierce nerds aren't just more competitive than others—they take competition personally. Their overconfidence, especially in youth, often works in their favor, acting as a self-fulfilling prophecy. Fierce nerds are usually smart enough to back their confidence, and their independent-mindedness makes them challenge norms rather than conform to them. They're also impatient—quick to interrupt, quicker to solve, driven more by restlessness than politeness.</p>
+
+      <p>The combination of competitiveness, intelligence, confidence, impatience, and independent thinking makes fierce nerds formidable. Watson and Crick, who unraveled DNA's structure, were classic fierce nerds—brilliant, awkward, bold, and unbothered by convention. Their drive let them outpace more polished rivals.</p>
+
+      <p>Young nerds may not recognize their own fierceness at first, as they often feel more awkward than powerful. But for those who do, here's the truth: your fierceness is an asset. It can solve hard problems—and not just in academia. Seven of the eight richest Americans are fierce nerds, showing that fierceness thrives even more in business than science.</p>
+
+      <p>But there's a warning. Left unused, fierceness festers into bitterness. Unchallenged fierce nerds risk becoming trolls, critics, or jaded cynics. To avoid this, pursue ambitious projects. Even if you fail, the effort channels your intensity. Alternatively, you could try dulling your edge through introspection—but it's better to wield the knife than blunt it.</p>
+
+      <p>Now is the best time to be a nerd. Power is shifting from charismatic talkers to competent builders. The fierce nerd's moment is here—so aim high, stay sharp, and don't waste it.</p>
+      `,
     },
     'design-tips': {
       title: 'Three Observations',
@@ -318,10 +328,6 @@ export default async function BlogPost({ params }: PageProps) {
           className="prose prose-quoteless prose-gray dark:prose-invert max-w-3xl dark:text-gray-200"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
-
-        <div className="mt-12">
-          <NewsletterForm title="Subscribe To My Newsletter" />
-        </div>
       </div>
     </section>
   );

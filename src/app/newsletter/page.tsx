@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link'
-import NewsletterForm from '@/components/NewsletterForm'
 import dynamic from 'next/dynamic'
 
 const MotionDiv = dynamic(() => import('framer-motion').then((mod) => mod.motion.div), {
@@ -53,8 +52,6 @@ export default function Newsletter() {
         Newsletter
       </h1>
       
-      <NewsletterForm />
-
       <div className="mt-10 mb-4 text-md">Past Issues:</div>
 
       <div className="flex flex-col gap-3 w-full">
