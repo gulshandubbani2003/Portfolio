@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
-import NewsletterForm from '@/components/NewsletterForm'
 import dynamic from 'next/dynamic'
 
 const MotionDiv = dynamic(() => import('framer-motion').then((mod) => mod.motion.div), {
@@ -94,7 +93,7 @@ export default function Home() {
           {/* Introduction */}
           <div>
             <p className="text-gray-500 dark:text-gray-400 text-lg font-[400] tracking-tighter">
-            Hey! I’m Anmol, a CS junior at MIT. I’m into quant finance, AI, and blockchain. Interested in tech startups and currently building a crypto DEX.
+            Hey! I'm Anmol, a CS junior at MIT. I'm into quant finance, AI, and blockchain. Interested in tech startups and currently building a crypto DEX.
             </p>
           </div>
 
@@ -203,22 +202,6 @@ export default function Home() {
               Read More
             </Link>
           </div>
-
-          {/* Newsletter Page */}
-          <MotionDiv
-            whileHover={{ 
-              y: -5,
-              transition: { 
-                duration: 0.2,
-                type: "spring",
-                stiffness: 300
-              }
-            }}
-            whileTap={{ scale: 0.99 }}
-            className="rounded-lg p-2"
-          >
-            <NewsletterForm />
-          </MotionDiv>
         </div>
       </div>
     </div>
