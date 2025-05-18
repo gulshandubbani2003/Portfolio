@@ -45,12 +45,12 @@ export default function BlogsPage() {
       slug: 'arc',
     },
     {
-      title: 'How I got into Coding',
+      title: 'Is Good Taste Real?',
       date: '2023-07-15',
       slug: 'coding-journey',
     },
     {
-      title: 'How to Approach Front-End?',
+      title: 'Superlinear Returns',
       date: '2023-05-27',
       slug: 'approach-frontend',
     },

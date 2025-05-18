@@ -14,12 +14,12 @@ export async function generateMetadata(
   const { slug } = await params; // Resolve the Promise to access slug
   const blogPosts = {
     'hack-brain': {
-      title: 'How to Hack Your Brain',
+      title: 'Fierce Nerds',
       description: 'Understanding cognitive processes and mental performance',
     },
     'design-tips': {
-      title: 'Three Observations',
-      description: 'Key insights into AGI and its economic impact',
+      title: 'The Age of AGI: Three Observations on What\'s Coming',
+      description: 'Three key observations on the emerging era of AGI and its impact',
     },
     'rejections-dont-define-you': {
       title: 'The Right Kind of Stubborn',
@@ -28,6 +28,14 @@ export async function generateMetadata(
     'rollercoaster-ride': {
       title: 'Putting Ideas into Words',
       description: 'The process of refining thoughts through writing',
+    },
+    'coding-journey': {
+      title: 'Is Good Taste Real?',
+      description: 'An argument for the existence of good taste and its role in art.',
+    },
+    'approach-frontend': {
+      title: 'Superlinear Returns',
+      description: 'Exploring how small differences in performance lead to disproportionate rewards through superlinear returns.',
     },
   };
 
@@ -91,41 +99,31 @@ export default async function BlogPost({ params }: PageProps) {
       `,
     },
     'design-tips': {
-      title: 'Three Observations',
+      title: 'The Age of AGI: Three Observations on What\'s Coming',
       date: '2024-08-23',
-      content: `<p>Artificial General Intelligence (AGI) is poised to reshape the world, bringing immense opportunities and challenges. Below are ten critical observations regarding its development and impact.</p>
-
-      <h2>1. AGI: The Next Evolutionary Step</h2>
-      <p>Humanity has always sought to build better tools, and AGI is the natural next phase of innovation. Like electricity, transistors, and the internet, AGI will redefine the boundaries of what's possible.</p>
-
-      <h2>2. Predictable Scaling of Intelligence</h2>
-      <p>AI performance scales logarithmically with increased compute, data, and resources. This means continued investment will lead to steady and predictable improvements.</p>
-
-      <h2>3. The Cost of AI is Dropping Rapidly</h2>
-      <p>AI is becoming exponentially cheaper. Compared to early 2023, the cost of using AI in 2024 has dropped by over 100x, enabling wider adoption across industries.</p>
-
-      <h2>4. Intelligence Drives Exponential Economic Value</h2>
-      <p>The greater the intelligence, the higher the economic returns. This dynamic ensures that AI investment will not slow down anytime soon.</p>
-
-      <h2>5. AI Agents as Virtual Co-Workers</h2>
-      <p>AI is transitioning from simple chatbots to highly capable virtual assistants, capable of handling complex tasks in software engineering, research, and more.</p>
-
-      <h2>6. The Economic Shift Will Be Unprecedented</h2>
-      <p>AI's impact on productivity and automation is comparable to the introduction of transistors. Many industries will be transformed as AI becomes embedded in daily life.</p>
-
-      <h2>7. The Nature of Work Will Evolve</h2>
-      <p>Traditional jobs will shift, and new roles will emerge. Adaptability and problem-solving will become key skills as AI reshapes the workforce.</p>
-
-      <h2>8. The Acceleration of Scientific Discovery</h2>
-      <p>AGI has the potential to accelerate medical breakthroughs, making diseases curable and dramatically improving quality of life worldwide.</p>
-
-      <h2>9. Societal Integration Requires Caution</h2>
-      <p>Rolling out AGI gradually allows society to adapt. The challenge lies in policy and governance to ensure AGI benefits everyone fairly.</p>
-
-      <h2>10. The Direction We Choose Matters</h2>
-      <p>AGI could either empower individuals or be used for authoritarian control. Ensuring fair access and responsible use is critical for shaping a better future.</p>
-
-      <p>By 2035, AI advancements should provide intelligence equivalent to the collective brainpower of everyone alive today. If harnessed correctly, AGI will unlock unparalleled creativity and progress for all of humanity.</p>`,
+      content: `<h3><em>The Age of AGI: Three Observations on What's Coming</em></h3>
+<p>It's becoming harder to ignore the signs: we're on the brink of a new era in intelligence.</p>
+<p>The idea of Artificial General Intelligence—systems that can understand and solve problems across domains, much like humans do—is no longer just science fiction. While the destination isn't fully in view, the path is becoming clearer. The tools we're building today are starting to feel a lot more like general-purpose minds than narrow assistants.</p>
+<p>For thousands of years, humanity has built tools to extend its reach. Fire, the wheel, the printing press, electricity, the internet—each reshaped civilization. AGI might be the next big leap. It's not just another tool—it's the foundation for building any tool.</p>
+<p>What makes this moment so special is how fast things are moving. In the last few years, we've gone from early neural nets struggling with basic tasks to systems capable of writing code, generating art, and holding deep conversations. The pace is dizzying, but there's a pattern in the chaos.</p>
+<h2>1. Intelligence scales with resources</h2>
+<p>The more compute, data, and time poured into training AI models, the more capable they become. This scaling isn't linear, but the trajectory is remarkably consistent. We're learning that with enough resources, these models don't just get marginally better—they get fundamentally smarter.</p>
+<h2>2. Costs are falling, and usage is exploding</h2>
+<p>As technology matures, prices drop. What once cost thousands of dollars can now be accessed by almost anyone with an internet connection. In the AI world, we're seeing usage costs drop by orders of magnitude. As prices fall, more people experiment, more tools are built, and the cycle accelerates.</p>
+<h2>3. Small gains in intelligence unlock massive value</h2>
+<p>Even modest improvements in AI capability can lead to huge leaps in utility. One version might fumble through a task, while the next completes it fluently. The economic value of intelligence is nonlinear—every improvement opens doors to entirely new possibilities.</p>
+<p>If these trends hold, AGI won't just be a milestone—it'll be a transformation.</p>
+<p>We're beginning to see early versions of AI agents that can do basic digital tasks: book appointments, sort files, draft emails. Now imagine thousands of such agents working across industries—automating workflows, boosting productivity, and collaborating with humans in creative ways.</p>
+<p>It's tempting to think AGI will be a flashy, singular moment. But like the transistor or the internet, it may sneak quietly into the fabric of everyday life. Invisible, ubiquitous, powerful.</p>
+<p>That doesn't mean the world will suddenly feel alien. People will still fall in love, laugh at memes, go hiking, binge-watch shows. But behind the scenes, how we work, create, and solve problems may never be the same.</p>
+<p>And while the potential is enormous, the distribution of benefits won't be automatic.</p>
+<p>Some industries will be reinvented overnight; others may lag. Access to this intelligence may initially cluster in the hands of a few. The challenge is ensuring it lifts all boats—not just the yachts.</p>
+<p>That will require decisions—technical, social, political. It's not just about building smarter machines, but about designing systems that share power, opportunity, and control.</p>
+<p>People should be able to shape how these tools are used. That means open access, decentralization, and empowering individuals—not just institutions. Centralized control of AGI would be dangerous. It's vital that this future isn't dictated by a handful of corporations or governments.</p>
+<p>We need mechanisms to ensure fair access—maybe through policies that distribute compute, or models that are open and auditable. The goal isn't just to create intelligence, but to make it widely and fairly available.</p>
+<p>Imagine a world where anyone—regardless of where they're born—can harness intelligence more powerful than today's top experts. A world where the ability to create, heal, discover, and understand is in everyone's hands.</p>
+<p>That's a future worth building.</p>
+`,
     },
     'crazy-tech-ride': {
       title: 'What I Wish Someone Had Told Me',
@@ -296,6 +294,46 @@ export default async function BlogPost({ params }: PageProps) {
         <li>There are two senses of talking to someone: a strict sense in which the conversation is verbal, and a more general sense in which it can take any form, including writing. In the limit case (e.g., Seneca's letters), conversation in the latter sense becomes essay writing. It can be very useful to talk (in either sense) with other people as you're writing something. But a verbal conversation will never be more exacting than when you're talking about something you're writing.</li>
       </ol>
       `,
+    },
+    'coding-journey': {
+      title: 'Is Good Taste Real?',
+      date: '2023-07-15',
+      content: `<p>When I was a kid, I thought good taste didn't exist. My dad said it was all subjective. But I eventually realized he was wrong, not by argument but by experience.</p>
+
+<p>If good taste doesn't exist, then good art doesn't either. You can't say someone has better taste if no art is objectively better than another. That would mean no one can be good at making art. Not painters, not writers, not filmmakers. But that's clearly not true.</p>
+
+<p>When I learned to paint, it became obvious. Leonardo wasn't just famous. He was better. You could try to copy his work and feel the gap. That's how I knew: taste is real.</p>
+
+<p>So why do people doubt it? One reason is that taste gets confused with popularity, fashion, or prestige. Another is that people often disagree. But disagreement doesn't prove nonexistence. It just shows the signal is noisy.</p>
+
+<p>Art is made for humans. And while humans vary, we're not random. If most knowledgeable people tend to respond similarly to certain work, that's enough to say the work has value. It's not binary. It's probabilistic. Like a vaccine's effectiveness isn't universal, but we still measure it.</p>
+
+<p>Great art works on people. Some art works better. Some people understand that better. So while perfect taste may not exist, good taste definitely does.</p>`,
+    },
+    'approach-frontend': {
+      title: 'Superlinear Returns',
+      date: '2023-05-27',
+      content: `<p>In Superlinear Returns, one of the most critical but underappreciated ideas shaping success is that performance and reward are not linearly related. Instead, rewards tend to grow disproportionately, often exponentially, with performance.</p>
+
+<p>Growing up, we are taught a linear model of effort and reward — "you get out what you put in." But in reality, this is rarely the case. If your product is half as good as a competitor's, you may not earn half the market — you might earn none. The best performers in a field tend to dominate disproportionately, regardless of how hard they try.</p>
+
+<h2>Linear vs. Superlinear Thinking</h2>
+<p>Superlinear returns describe how small differences in performance can lead to huge differences in rewards due to compounding effects and threshold crossings.</p>
+
+<h2>1. Exponential Growth</h2>
+<p>Progress that compounds over time can lead to exponential increases. Knowledge, infrastructure, and network effects build upon themselves, creating rapidly escalating outcomes.</p>
+
+<h2>2. Threshold Effects</h2>
+<p>Crossing a threshold — even by a small margin — can unlock outsized rewards. Whether it's winning a competition, securing a key customer, or achieving product-market fit, surpassing critical thresholds often catalyzes further growth.</p>
+
+<h2>How to Find Superlinear Opportunities</h2>
+<ul>
+  <li>Seek activities that compound: deep learning, building infrastructure, and cultivating networks.</li>
+  <li>Always be learning: knowledge itself compounds and accelerates future progress.</li>
+  <li>Identify areas of replaceable mediocrity: opportunities arise where popular solutions are flawed.</li>
+  <li>Explore underexamined frontiers: breakthroughs often come from unexpected or overlooked areas.</li>
+</ul>
+<p>Understanding superlinear returns offers a roadmap: work where gains compound and push through thresholds to unlock exponential potential.</p>`,
     },
   };
 
