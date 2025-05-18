@@ -59,7 +59,7 @@ export default function BlogsPage() {
   return (
     <div className="w-full max-w-3xl">
       <h1 className="font-medium text-gray-900 dark:text-white mb-6 text-2xl">
-        All Blogs
+        All Blogs(my favorite ones)
       </h1>
       <div className="space-y-4">
         {blogs.map((blog, index) => (

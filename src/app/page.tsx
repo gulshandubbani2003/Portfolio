@@ -70,7 +70,7 @@ export default function Home() {
   // Blog data
   const blogs = [
     {
-      title: 'How to Hack Your Brain',
+      title: 'Fierce Nerds',
       date: '2024-10-04',
       slug: 'hack-brain',
     },
