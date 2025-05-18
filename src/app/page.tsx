@@ -75,9 +75,9 @@ export default function Home() {
       slug: 'hack-brain',
     },
     {
-      title: 'Three Observations',
+      title: 'The Age of AGI: Three Observations on What\'s Coming',
       date: '2024-08-23',
-      slug: 'Three-Observations',
+      slug: 'design-tips',
     },
     {
       title: 'What I Wish Someone Had Told Me',
