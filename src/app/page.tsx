@@ -44,7 +44,7 @@ export default function Home() {
     {
       title: 'Tradeo',
       description: 'Realtime sentiment analysis of stocks and cryptocurrencies',
-      link: 'https://github.com/anmolxlight/Tradeo',
+      link: 'https://tradeo.streamlit.app/',
       icon: '',
     },
     {
