@@ -13,27 +13,15 @@ export default function ProjectsPage() {
 
   const projects = [
     {
-      title: 'SyntaxUI Pro',
-      description: 'Premium UI components for your next project.',
-      link: 'https://pro.syntaxui.com',
-      icon: '/images/projects/syntaxUI.svg',
+      title: 'SupportFlow',
+      description: 'Realtime AI conversational support agent',
+      link: 'https://github.com/anmolxlight/SupportFlow',
+      icon: '',
     },
     {
-      title: 'SyntaxUI',
-      description: 'Free-to-use UI React components and blocks.',
-      link: 'https://syntaxui.com',
-      icon: '/images/projects/syntaxUI.svg',
-    },
-    {
-      title: 'Prettyfolio',
-      description: 'A curated collection of portfolios for inspiration.',
-      link: 'https://prettyfolio.com',
-      icon: '/images/projects/prettyfolio.png',
-    },
-    {
-      title: 'Enchant',
-      description: 'A vibrant theme for Visual Studio Code.',
-      link: 'https://enchant.anmolishra.com',
+      title: 'Tradeo',
+      description: 'Realtime sentiment analysis of stocks and cryptocurrencies',
+      link: 'https://github.com/anmolxlight/Tradeo',
       icon: '',
     },
     {
