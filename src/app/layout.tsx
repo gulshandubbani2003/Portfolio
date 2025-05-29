@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 import { ThemeProvider } from '@/components/ThemeProvider'
 
 export const metadata: Metadata = {
-  title: 'Anmol Mishra',
+  title: 'Gulshan Dubbani',
   description: 'AI Researcher & Quant Dev',
   icons: {
     icon: '/images/projects/faviconfinal2.ico',

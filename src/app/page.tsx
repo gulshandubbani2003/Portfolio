@@ -11,46 +11,39 @@ export default function Home() {
   // Experience data
   const experiences = [
     {
-      title: 'Research Consultant',
-      company: 'WorldQuant',
+      title: 'Quantitative Analyst',
+      company: 'WorldQuant BRAIN',
       period: 'PRESENT',
       isPresent: true,
       color: 'bg-green-500' // Green for current job
     },
     {
-      title: 'AI Engineer Intern',
-      company: 'HDFC Securities',
-      period: '',
+      title: 'Data Analyst',
+      company: 'Unifins IT Hub Pvt Ltd',
+      period: 'Jul\'24 - Nov\'24',
       isPresent: false,
       color: 'bg-blue-500' // Blue for past job
-    },
-    {
-      title: 'Quant Researcher',
-      company: 'Stealth Crypto Quant Startup',
-      period: '',
-      isPresent: false,
-      color: 'bg-purple-500' // Purple for another past job
-    },
+    }
   ]
 
   // Projects data
   const projects = [
     {
-      title: 'SupportFlow',
-      description: 'Realtime AI conversational support agent',
-      link: 'https://github.com/anmolxlight/SupportFlow',
+      title: 'AI Customer Assistant',
+      description: 'Real-time voice interaction system with Spring Boot microservices',
+      link: 'https://github.com/gulshandubbani',
       icon: '',
     },
     {
-      title: 'Tradeo',
-      description: 'Realtime sentiment analysis of stocks and cryptocurrencies',
-      link: 'https://tradeo.streamlit.app/',
+      title: 'MIT-WPU Campus Navigator',
+      description: 'Flask-based campus navigation system with RRT algorithm',
+      link: 'https://github.com/gulshandubbani',
       icon: '',
     },
     {
-      title: 'Portfolio',
-      description: 'My personal website, blogs and newsletter.',
-      link: 'https://anmolxred.netlify.app',
+      title: 'AI Virtual Trainer',
+      description: 'Real-time posture correction and workout assistance using MediaPipe',
+      link: 'https://github.com/gulshandubbani',
       icon: '',
     },
   ]
@@ -58,19 +51,19 @@ export default function Home() {
   // Blog data
   const blogs = [
     {
-      title: 'Fierce Nerds',
-      date: '2024-10-04',
-      slug: 'hack-brain',
+      title: 'Machine Learning in Finance',
+      date: '2024-03-15',
+      slug: 'ml-finance',
     },
     {
-      title: 'The Age of AGI: Three Observations on What\'s Coming',
-      date: '2024-08-23',
-      slug: 'design-tips',
+      title: 'Deep Learning for Computer Vision',
+      date: '2024-02-20',
+      slug: 'deep-learning-cv',
     },
     {
-      title: 'What I Wish Someone Had Told Me',
-      date: '2024-07-02',
-      slug: 'crazy-tech-ride',
+      title: 'Building Scalable Microservices',
+      date: '2024-01-25',
+      slug: 'microservices-architecture',
     },
   ]
 
@@ -81,7 +74,7 @@ export default function Home() {
           {/* Introduction */}
           <div>
             <p className="text-gray-500 dark:text-gray-400 text-lg font-[400] tracking-tighter">
-            Hey! I'm Anmol, a CS junior at MIT. I'm into quant finance, AI, and blockchain. Interested in tech startups and currently building a crypto DEX.
+            Hey! I'm Gulshan Dubbani, a Computer Science student at MIT World Peace University specializing in AI and Data Science. I'm passionate about Machine Learning, Quantitative Analysis, and Software Development. With extensive experience in AI/ML technologies and a strong foundation in data analysis, I enjoy building innovative solutions that combine cutting-edge AI with practical applications.
             </p>
           </div>
 

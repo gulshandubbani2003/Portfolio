@@ -36,14 +36,14 @@ export default function NavBar() {
           <Link href="/">
             <Image
               src="/images/profile.jpg"
-              alt="Anmol Mishra"
+              alt="Gulshan Dubbani"
               width={64}
               height={64}
               className="rounded-full"
             />
           </Link>
           <h1 className="font-medium text-gray-900 dark:text-gray-100 mt-2 text-xl font-heading">
-            Anmol Mishra
+            Gulshan Dubbani
           </h1>
           <p className="text-gray-500 dark:text-gray-400">AI Researcher & Quant Dev</p>
           <div className="flex flex-row justify-between items-center mt-3 mb-8">

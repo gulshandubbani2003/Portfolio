@@ -3,14 +3,17 @@ export default function Contact() {
     <div className="w-full max-w-3xl relative -top-38">
       <div style={{ opacity: 1, transform: 'none' }}>
         <p className="text-gray-500 mb-4">
-          Let's work on something together, you can book a {' '}
-          <a href="https://calendly.com/anmolx-work/30min" className="underline">
-            meeting
+          Feel free to reach out to me for collaboration opportunities or discussions. You can contact me via email at{' '}
+          <a href="mailto:gulshandubbani2003@gmail.com" className="underline">
+            gulshandubbani2003@gmail.com
           </a>{' '}
-          or drop a DM on{' '}
-          <a href="https://twitter.com/direct_messages/create/trex3x00" className="underline">
-            Twitter 
-          </a> or drop me a mail at anmolx.work@gmail.com.
+          or call me at{' '}
+          <a href="tel:+917276924058" className="underline">
+            +91-7276924058
+          </a>. You can also check out my projects on{' '}
+          <a href="https://github.com/gulshandubbani" className="underline">
+            GitHub
+          </a>.
         </p>
       </div>
     </div>
