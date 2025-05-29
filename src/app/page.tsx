@@ -31,19 +31,19 @@ export default function Home() {
     {
       title: 'AI Customer Assistant',
       description: 'Real-time voice interaction system with Spring Boot microservices',
-      link: 'https://github.com/gulshandubbani',
+      link: 'https://github.com/gulshandubbani2003/SupportFlow',
       icon: '',
     },
     {
       title: 'MIT-WPU Campus Navigator',
       description: 'Flask-based campus navigation system with RRT algorithm',
-      link: 'https://github.com/gulshandubbani',
+      link: 'https://github.com/gulshandubbani2003/MIT_WPU_PathFinder',
       icon: '',
     },
     {
       title: 'AI Virtual Trainer',
       description: 'Real-time posture correction and workout assistance using MediaPipe',
-      link: 'https://github.com/gulshandubbani',
+      link: 'https://github.com/gulshandubbani2003',
       icon: '',
     },
   ]
