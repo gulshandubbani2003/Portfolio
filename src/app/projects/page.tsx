@@ -27,7 +27,7 @@ export default function ProjectsPage() {
     {
       title: 'Portfolio',
       description: 'My personal website, blogs and newsletter.',
-      link: 'https://anmolxred.netlify.app',
+      link: 'https://gulshandubbani.netlify.app/',
       icon: '',
     },
   ]
