@@ -49,13 +49,13 @@ export default function NavBar() {
           <div className="flex flex-row justify-between items-center mt-3 mb-8">
             <div className="flex flex-row items-center justify-between w-full">
               <div className="flex flex-row gap-x-3">
-                <a target="_blank" rel="noreferrer" href="https://x.com/trex3x00">
+                <a target="_blank" rel="noreferrer" href="https://x.com/elonmusk">
                   <Twitter size={20} className="text-gray-900 dark:text-gray-100" />
                 </a>
-                <a target="_blank" rel="noreferrer" href="https://github.com/anmolxlight">
+                <a target="_blank" rel="noreferrer" href="https://github.com/gulshandubbani2003">
                   <Github size={20} className="text-gray-900 dark:text-gray-100" />
                 </a>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anmolxlight/">
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/gulshan-dubbani-a679842a2/">
                   <Linkedin size={20} className="text-gray-900 dark:text-gray-100" />
                 </a>
               </div>

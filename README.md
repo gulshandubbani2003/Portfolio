@@ -1,4 +1,4 @@
-# Anmol Mishra's Personal Portfolio
+# Gulshan Dubbani's Personal Portfolio
 
 ## Overview
 Minimalistic, responsive personal portfolio website built with Next.js 15, showcasing projects, blogs, and professional journey.
@@ -56,6 +56,6 @@ npm run dev
 ```
 
 ## Contact
-- Twitter: [@trex3x00](https://twitter.com/trex3x00)
-- Email: anmolx.work@gmail.com
-- Personal Site: [clickhere](https://anmolxred.netlify.app/)
+- Twitter: [@](https://twitter.com/elonmusk)
+- Email: gulshandubbani2003@gmail.com
+- Personal Site: [clickhere](https://gulshandubbani.netlify.app/)
