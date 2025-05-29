@@ -1,4 +1,4 @@
-# Anmol Mishra's Personal Portfolio
+# Gulshan Dubbani's Personal Portfolio
 
 ## Overview
 Minimalistic, responsive personal portfolio website built with Next.js 15, showcasing projects, blogs, and professional journey.
