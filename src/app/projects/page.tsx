@@ -15,7 +15,7 @@ export default function ProjectsPage() {
     {
       title: 'SupportFlow',
       description: 'Realtime AI conversational support agent',
-      link: 'https://github.com/anmolxlight/SupportFlow',
+      link: 'https://github.com/gulshandubbani2003/SupportFlow',
       icon: '',
     },
     {
