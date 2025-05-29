@@ -11,7 +11,7 @@ export default function Contact() {
           <a href="tel:+917276924058" className="underline">
             +91-7276924058
           </a>. You can also check out my projects on{' '}
-          <a href="https://github.com/gulshandubbani" className="underline">
+          <a href="https://github.com/gulshandubbani2003" className="underline">
             GitHub
           </a>.
         </p>
