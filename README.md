@@ -56,6 +56,6 @@ npm run dev
 ```
 
 ## Contact
-- Twitter: [@](https://twitter.com/elonmusk)
-- Email: gulshandubbani2003@gmail.com
-- Personal Site: [clickhere](https://gulshandubbani.netlify.app/)
+- Twitter: [@trex3x00](https://twitter.com/trex3x00)
+- Email: anmolx.work@gmail.com
+- Personal Site: [clickhere](https://anmolxred.netlify.app/)
