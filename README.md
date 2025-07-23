@@ -49,7 +49,7 @@ portfolio/
 
 ### Installation
 ```bash
-git clone https://github.com/anmolxlight/portfolio
+git clone https://github.com/gulshandubbani2003/portfolio
 cd portfolio
 npm install
 npm run dev
