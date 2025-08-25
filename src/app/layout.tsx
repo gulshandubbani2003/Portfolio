@@ -7,7 +7,7 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 
 export const metadata: Metadata = {
   title: 'Gulshan Dubbani',
-  description: 'AI Researcher & Quant Dev',
+  description: 'DevOps intern and AI Developr',
   icons: {
     icon: '/images/projects/faviconfinal2.ico',
   },

@@ -11,11 +11,18 @@ export default function Home() {
   // Experience data
   const experiences = [
     {
-      title: 'Quantitative Analyst',
-      company: 'WorldQuant BRAIN',
+      title: 'DevOps Intern',
+      company: 'Apt. trading',
       period: 'PRESENT',
       isPresent: true,
       color: 'bg-green-500' // Green for current job
+    },
+    {
+      title: 'Research Consultant',
+      company: 'WorldQuant BRAIN',
+      period: '',
+      isPresent: false,
+      color: 'bg-blue-500' // Blue for past job
     },
     {
       title: 'Data Analyst',
@@ -35,37 +42,20 @@ export default function Home() {
       icon: '',
     },
     {
-      title: 'MIT-WPU Campus Navigator',
-      description: 'Flask-based campus navigation system with RRT algorithm',
-      link: 'https://github.com/gulshandubbani2003/MIT_WPU_PathFinder',
+      title: 'trading-platform-infra',
+      description: 'Real-time trading platform infrastructure with AWS ECS, RDS, SQS, Lambda',
+      link: 'https://github.com/gulshandubbani2003/trading-platform-infra',
       icon: '',
     },
     {
-      title: 'AI Virtual Trainer',
-      description: 'Real-time posture correction and workout assistance using MediaPipe',
-      link: 'https://github.com/gulshandubbani2003',
+      title: 'Terminal Assistant',
+      description: 'AI-powered terminal assistant with API/local LLM support and command execution',
+      link: 'https://github.com/gulshandubbani2003/Terminal_assistant',
       icon: '',
     },
   ]
 
-  // Blog data
-  const blogs = [
-    {
-      title: 'Machine Learning in Finance',
-      date: '2024-03-15',
-      slug: 'ml-finance',
-    },
-    {
-      title: 'Deep Learning for Computer Vision',
-      date: '2024-02-20',
-      slug: 'deep-learning-cv',
-    },
-    {
-      title: 'Building Scalable Microservices',
-      date: '2024-01-25',
-      slug: 'microservices-architecture',
-    },
-  ]
+  
 
   return (
     <div className="w-full max-w-3xl">
@@ -74,7 +64,7 @@ export default function Home() {
           {/* Introduction */}
           <div>
             <p className="text-gray-500 dark:text-gray-400 text-lg font-[400] tracking-tighter">
-            Hey! I'm Gulshan Dubbani, a Computer Science student at MIT World Peace University specializing in AI and Data Science. I'm passionate about Machine Learning, Quantitative Analysis, and Software Development. With extensive experience in AI/ML technologies and a strong foundation in data analysis, I enjoy building innovative solutions that combine cutting-edge AI with practical applications.
+            Computer Science student at MIT WPU (AI & Data Science) with industry experience as a DevOps Intern at Tusta (AWS, Terraform, CI/CD, Kubernetes), Research Consultant at WorldQuant BRAIN (quantitative signals & predictive trading models), and Data Analyst at Unifins (financial data pipelines, LSTM forecasting, OpenAI-based analysis). Strong problem-solving foundation with 600+ DSA questions solved across platforms (LeetCode, CodingNinjas, GeeksforGeeks). Skilled in AI/ML, quantitative research, and scalable software systems.
             </p>
           </div>
 
@@ -139,50 +129,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Blogs Page */}
-          <div className="">
-            <h1 className="font-medium text-gray-900 dark:text-white mb-4 text-lg">
-              Latest Blogs
-            </h1>
-            {blogs.map((blog, index) => (
-              <MotionDiv
-                key={index}
-                whileHover={{ 
-                  y: -5,
-                  transition: { 
-                    duration: 0.2,
-                    type: "spring",
-                    stiffness: 300
-                  }
-                }}
-                whileTap={{ scale: 0.99 }}
-                className="rounded-lg"
-              >
-                <Link
-                  className="flex flex-col space-y-1 mb-4 py-2 px-2"
-                  href={`/blogs/${blog.slug}`}
-                >
-                  <div className="w-full flex flex-col">
-                    <div className="flex items-center gap-2 justify-between">
-                      <p className="text-gray-900 dark:text-gray-100 text-lg font-heading tracking-tight">
-                        {blog.title}
-                      </p>
-                      <p className="text-gray-500 dark:text-gray-400 text-sm tracking-tight mt-1">
-                        {blog.date}
-                      </p>
-                    </div>
-                  </div>
-                </Link>
-              </MotionDiv>
-            ))}
-            <Link
-              className="hover:underline text-sm"
-              aria-label="Read more blogs"
-              href="/blogs"
-            >
-              Read More
-            </Link>
-          </div>
+          
         </div>
       </div>
     </div>

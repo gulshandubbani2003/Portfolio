@@ -24,7 +24,6 @@ export default function NavBar() {
 
   const navLinks = [
     { name: 'About', href: '/' },
-    { name: 'Blogs', href: '/blogs' },
     { name: 'Projects', href: '/projects' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -45,11 +44,11 @@ export default function NavBar() {
           <h1 className="font-medium text-gray-900 dark:text-gray-100 mt-2 text-xl font-heading">
             Gulshan Dubbani
           </h1>
-          <p className="text-gray-500 dark:text-gray-400">AI Researcher & Quant Dev</p>
+          <p className="text-gray-500 dark:text-gray-400">DevOps intern and AI Developr</p>
           <div className="flex flex-row justify-between items-center mt-3 mb-8">
             <div className="flex flex-row items-center justify-between w-full">
               <div className="flex flex-row gap-x-3">
-                <a target="_blank" rel="noreferrer" href="https://x.com/elonmusk">
+                <a target="_blank" rel="noreferrer" href="https://x.com/Gulshhhan_02?t=Svsu0pUesYepjouX0ZK_7A&s=08">
                   <Twitter size={20} className="text-gray-900 dark:text-gray-100" />
                 </a>
                 <a target="_blank" rel="noreferrer" href="https://github.com/gulshandubbani2003">
