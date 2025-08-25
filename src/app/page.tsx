@@ -18,6 +18,13 @@ export default function Home() {
       color: 'bg-green-500' // Green for current job
     },
     {
+      title: 'BTSA',
+      company: 'ZS Associates',
+      period: 'UPCOMING',
+      isPresent: false,
+      color: 'bg-gray-300' // Neutral for upcoming role
+    },
+    {
       title: 'Research Consultant',
       company: 'WorldQuant BRAIN',
       period: '',
@@ -86,7 +93,7 @@ export default function Home() {
                     <div className="text-md font-medium text-gray-900 dark:text-gray-300 tracking-tighter">
                       {exp.title}
                     </div>
-                    {exp.isPresent && (
+                    {exp.period && (
                       <div className="inline-block uppercase text-xs rounded-full px-1 py-0 border border-gray-500 text-gray-500 dark:text-gray-400 dark:border-gray-400">
                         {exp.period}
                       </div>
